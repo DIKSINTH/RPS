@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  height: 12vh;
+  width: 100vw;
+  background-color: #640d5f;
+  font-family: "Jaro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 4px;
+}
+#choose {
+  width: 100vw;
+  height: 16vh;
+  background-color: #d91656;
+}
+.img-btn {
+  width: 70px;
+  height: 80px;
+}
+.btn-img {
+  width: 70px;
+  height: 80px;
+  border-radius: 120px;
+}
+#play-ground {
+  width: 100vw;
+  height: 67vh;
+  background-color: #eb5b00;
+}
+#footer {
+  height: 5vh;
+  width: 100vw;
+  background-color: #ffb200;
+}

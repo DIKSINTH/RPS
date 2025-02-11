@@ -85,6 +85,7 @@ class computer {
       document.getElementById("computer-rock").style.display = "none";
     }
   }
+  rock_check(number) {}
 }
 function Rock() {
   var speech = new SpeechSynthesisUtterance();

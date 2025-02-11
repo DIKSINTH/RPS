@@ -2,6 +2,71 @@
   margin: 0;
   padding: 0;
 }
+#Name {
+  width: 75%;
+  height: 60px;
+  border-radius: 20px;
+  border: 0px;
+  margin-top: 20px;
+  padding-left: 20px;
+  font-size: 32px;
+}
+#Name:hover {
+  border: 0px;
+}
+#dot {
+  text-decoration: none;
+  color: white;
+  transition: color 1s ease;
+  font-weight: bold;
+  font-size: 24px;
+}
+#dot:hover {
+  color: #ffb200;
+}
+#alert_box {
+  width: 80vh;
+  height: 53vh;
+  background-color: #640d5f;
+  position: absolute;
+  color: white;
+  display: none;
+  top: 30%;
+  left: 30%;
+  z-index: 1000;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 10px 10px 20px 5px black;
+}
+#important_notice {
+  padding-top: 30px;
+  font-family: "Jaro", serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+}
+#alert_message {
+  padding-top: 10px;
+  width: 80%;
+  margin-left: 50px;
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#ok {
+  margin-top: 25px;
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-family: "Jaro", serif;
+  cursor: pointer;
+  border: 0px;
+}
+#ok:hover {
+  background-color: #ffb200;
+}
+
 #header-img-1 {
   width: 150px;
   height: 95px;
@@ -90,11 +155,64 @@
   position: relative;
 }
 #vs {
-  width: 210px;
+  width: 250px;
   position: absolute;
-  height: 160px;
+  height: 300px;
+  left: 41%;
+  top: 20%;
+}
+#message {
+  position: absolute;
+  color: white;
+  font-size: 36px;
   left: 43%;
-  top: 40%;
+  top: 10%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#player {
+  position: absolute;
+  left: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 5%;
+  color: white;
+}
+#player-chances {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  left: 23%;
+  top: 14%;
+}
+#computer {
+  position: absolute;
+  right: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 5%;
+  color: white;
+}
+#computer-chances {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  right: 25%;
+  top: 14%;
+}
+.player-pic {
+  position: absolute;
+  width: 400px;
+  height: 280px;
+  left: 10%;
+  top: 20%;
+  display: none;
+}
+.computer-pic {
+  position: absolute;
+  width: 400px;
+  height: 280px;
+  right: 12%;
+  top: 22%;
+  display: none;
 }
 #footer {
   height: 5vh;

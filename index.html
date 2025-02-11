@@ -11,8 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fascinate&family=Jaro:opsz@6..72&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js"></script>
   </head>
   <body>
+    <div id="alert_box">
+      <h1 id="important_notice">IMPORTANT NOTICE</h1>
+      <p id="alert_message">
+        You should understand how to play this game. First you should check the
+        <a id="dot" href="#">description</a>, and then you play.
+      </p>
+      <input type="text" id="Name" placeholder="Enter Your Name" required />
+      <button id="ok" type="submit" onclick="promptbox()">OK</button>
+    </div>
     <div id="header">
       <img id="header-img-1" src="rps.png" alt="" />
       <img id="header-img-2" src="japanese.png" alt="" />
@@ -20,18 +30,59 @@
     </div>
     <div id="choose">
       <div id="button-section">
-        <button class="btn-img">
+        <button class="btn-img" onclick="Rock()">
           <img class="img-btn" src="Rock.png" alt="" /></button
-        ><button class="btn-img">
+        ><button class="btn-img" onclick="Paper()">
           <img class="img-btn" src="Paper.png" alt="" /></button
-        ><button class="btn-img">
+        ><button class="btn-img" onclick="Scissor()">
           <img class="img-btn" src="Scissor.png" alt="" />
         </button>
       </div>
       <a href="">DESCRIPTION</a>
     </div>
     <div id="play-ground">
+      <span id="message">Start the Game</span>
       <img id="vs" src="vs.png" alt="" />
+      <h1 id="player">PLAYER</h1>
+      <h1 id="player-chances">5</h1>
+      <h1 id="computer">COMPUTER</h1>
+      <h1 id="computer-chances">5</h1>
+      <img
+        class="player-pic"
+        id="player-rock"
+        src="player_rock_sign.png"
+        alt=""
+      />
+      <img
+        class="player-pic"
+        id="player-paper"
+        src="player_paper_sign.png"
+        alt=""
+      />
+      <img
+        class="player-pic"
+        id="player-scissor"
+        src="player_scissor_sign.png"
+        alt=""
+      />
+      <img
+        class="computer-pic"
+        id="computer-rock"
+        src="computer_rock_sign.png"
+        alt=""
+      />
+      <img
+        class="computer-pic"
+        id="computer-paper"
+        src="computer_paper_sign.png"
+        alt=""
+      />
+      <img
+        class="computer-pic"
+        id="computer-scissor"
+        src="computer_scissor_sign.png"
+        alt=""
+      />
     </div>
     <div id="footer"></div>
   </body>

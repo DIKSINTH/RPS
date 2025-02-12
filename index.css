@@ -150,7 +150,7 @@
 }
 #play-ground {
   width: 100vw;
-  height: 67vh;
+  height: 72vh;
   background-color: #eb5b00;
   position: relative;
 }
@@ -165,7 +165,16 @@
   position: absolute;
   color: white;
   font-size: 36px;
-  left: 42%;
+  left: 39%;
+  top: 10%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#message1 {
+  position: absolute;
+  color: white;
+  font-size: 36px;
+  left: 46%;
   top: 10%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -214,8 +223,25 @@
   top: 22%;
   display: none;
 }
-#footer {
-  height: 5vh;
-  width: 100vw;
-  background-color: #ffb200;
+#winner-badge {
+  position: absolute;
+  width: 400px;
+  height: 280px;
+  left: 13%;
+  display: none;
+}
+#diksinth {
+  position: absolute;
+  width: 400px;
+  height: 550px;
+  bottom: 0%;
+  left: 33%;
+  display: none;
+}
+#heart1 {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  right: 0%;
+  display: none;
 }

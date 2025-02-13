@@ -87,6 +87,7 @@ function Rock() {
     document.getElementById("vs").style.display = "none";
     document.getElementById("player-chances").style.display = "none";
     document.getElementById("computer-chances").style.display = "none";
+    document.getElementById("lose").style.display = "block";
     if (true) {
       setTimeout(() => {
         location.reload();
@@ -95,8 +96,12 @@ function Rock() {
   } else if (computer_points == 0) {
     if (
       localStorage.getItem("Name").includes("Shiny") ||
-      localStorage.getItem("Name").includes("shiny")
+      localStorage.getItem("Name").includes("shiny") ||
+      localStorage.getItem("Name").includes("Adaikala") ||
+      localStorage.getItem("Name").includes("adaikala")
     ) {
+      const failSound = new Audio("minnale.mp3");
+      failSound.play();
       document.getElementById("computer").style.display = "none";
       document.getElementById("computer-rock").style.display = "none";
       document.getElementById("computer-paper").style.display = "none";
@@ -107,9 +112,22 @@ function Rock() {
       document.getElementById("vs").style.display = "none";
       document.getElementById("player-chances").style.display = "none";
       document.getElementById("computer-chances").style.display = "none";
-      document.getElementById("winner-badge").style.display = "block";
-      document.getElementById("diksinth").style.display = "block";
+      document.getElementById("winner-badge").style.display = "none";
+      document.getElementById("diksinth").style.display = "none";
+      document.getElementById("player").style.display = "none";
       document.getElementById("heart1").style.display = "block";
+      document.getElementById("heart2").style.display = "block";
+      document.getElementById("top_heart").style.display = "block";
+      document.getElementById("bottom_heart").style.display = "block";
+      document.getElementById("left_heart").style.display = "block";
+      document.getElementById("right_heart").style.display = "block";
+      document.getElementById("butterfly").style.display = "block";
+      document.getElementById("cat").style.display = "block";
+      if (true) {
+        setTimeout(() => {
+          location.reload();
+        }, 13000);
+      }
     } else {
       const failSound = new Audio("win.mp3");
       failSound.play();
@@ -162,7 +180,11 @@ function Rock() {
       const failSound = new Audio("wrong.mp3");
       failSound.play();
       document.getElementById("message").textContent = "Paper Wraps the Rock";
-      document.getElementById("message").style.color = "Red";
+      document.getElementById("message").style.color = "#FF2800";
+      document.getElementById("message").style.textShadow = `-1px -1px 0 white,
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white`;
       if (true) {
         const message = document.getElementById("message");
         message.style.display = "block";
@@ -183,7 +205,11 @@ function Rock() {
       failSound.play();
       document.getElementById("message").textContent =
         "Rock Crushes the Scissor";
-      document.getElementById("message").style.color = "green";
+      document.getElementById("message").style.color = "#98FB98";
+      document.getElementById("message").style.textShadow = `-1px -1px 0 white,
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white`;
       if (true) {
         const message = document.getElementById("message");
         message.style.display = "block";
@@ -219,30 +245,67 @@ function Paper() {
     document.getElementById("vs").style.display = "none";
     document.getElementById("player-chances").style.display = "none";
     document.getElementById("computer-chances").style.display = "none";
+    document.getElementById("lose").style.display = "block";
     if (true) {
       setTimeout(() => {
         location.reload();
       }, 8000);
     }
   } else if (computer_points == 0) {
-    const failSound = new Audio("win.mp3");
-    failSound.play();
-    document.getElementById("computer").style.display = "none";
-    document.getElementById("computer-rock").style.display = "none";
-    document.getElementById("computer-paper").style.display = "none";
-    document.getElementById("computer-scissor").style.display = "none";
-    document.getElementById("player-rock").style.display = "none";
-    document.getElementById("player-paper").style.display = "none";
-    document.getElementById("player-scissor").style.display = "none";
-    document.getElementById("vs").style.display = "none";
-    document.getElementById("player-chances").style.display = "none";
-    document.getElementById("computer-chances").style.display = "none";
-    document.getElementById("winner-badge").style.display = "block";
-    document.getElementById("diksinth").style.display = "block";
-    if (true) {
-      setTimeout(() => {
-        location.reload();
-      }, 13000);
+    if (
+      localStorage.getItem("Name").includes("Shiny") ||
+      localStorage.getItem("Name").includes("shiny") ||
+      localStorage.getItem("Name").includes("Adaikala") ||
+      localStorage.getItem("Name").includes("adaikala")
+    ) {
+      const failSound = new Audio("minnale.mp3");
+      failSound.play();
+      document.getElementById("computer").style.display = "none";
+      document.getElementById("computer-rock").style.display = "none";
+      document.getElementById("computer-paper").style.display = "none";
+      document.getElementById("computer-scissor").style.display = "none";
+      document.getElementById("player-rock").style.display = "none";
+      document.getElementById("player-paper").style.display = "none";
+      document.getElementById("player-scissor").style.display = "none";
+      document.getElementById("vs").style.display = "none";
+      document.getElementById("player-chances").style.display = "none";
+      document.getElementById("computer-chances").style.display = "none";
+      document.getElementById("winner-badge").style.display = "none";
+      document.getElementById("diksinth").style.display = "none";
+      document.getElementById("player").style.display = "none";
+      document.getElementById("heart1").style.display = "block";
+      document.getElementById("heart2").style.display = "block";
+      document.getElementById("top_heart").style.display = "block";
+      document.getElementById("bottom_heart").style.display = "block";
+      document.getElementById("left_heart").style.display = "block";
+      document.getElementById("right_heart").style.display = "block";
+      document.getElementById("butterfly").style.display = "block";
+      document.getElementById("cat").style.display = "block";
+      if (true) {
+        setTimeout(() => {
+          location.reload();
+        }, 13000);
+      }
+    } else {
+      const failSound = new Audio("win.mp3");
+      failSound.play();
+      document.getElementById("computer").style.display = "none";
+      document.getElementById("computer-rock").style.display = "none";
+      document.getElementById("computer-paper").style.display = "none";
+      document.getElementById("computer-scissor").style.display = "none";
+      document.getElementById("player-rock").style.display = "none";
+      document.getElementById("player-paper").style.display = "none";
+      document.getElementById("player-scissor").style.display = "none";
+      document.getElementById("vs").style.display = "none";
+      document.getElementById("player-chances").style.display = "none";
+      document.getElementById("computer-chances").style.display = "none";
+      document.getElementById("winner-badge").style.display = "block";
+      document.getElementById("diksinth").style.display = "block";
+      if (true) {
+        setTimeout(() => {
+          location.reload();
+        }, 13000);
+      }
     }
   } else {
     var random_number = Math.ceil(Math.random() * 15);
@@ -260,7 +323,11 @@ function Paper() {
       const failSound = new Audio("right.mp3");
       failSound.play();
       document.getElementById("message").textContent = "Paper Wraps the Rock";
-      document.getElementById("message").style.color = "green";
+      document.getElementById("message").style.color = "#98FB98";
+      document.getElementById("message").style.textShadow = `-1px -1px 0 white,
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white`;
       if (true) {
         const message = document.getElementById("message");
         message.style.display = "block";
@@ -296,7 +363,11 @@ function Paper() {
       failSound.play();
       document.getElementById("message").textContent =
         "Scissor Slice the Paper";
-      document.getElementById("message").style.color = "Red";
+      document.getElementById("message").style.color = "#FF2800";
+      document.getElementById("message").style.textShadow = `-1px -1px 0 white,
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white`;
       if (true) {
         const message = document.getElementById("message");
         message.style.display = "block";
@@ -331,30 +402,67 @@ function Scissor() {
     document.getElementById("vs").style.display = "none";
     document.getElementById("player-chances").style.display = "none";
     document.getElementById("computer-chances").style.display = "none";
+    document.getElementById("lose").style.display = "block";
     if (true) {
       setTimeout(() => {
         location.reload();
       }, 8000);
     }
   } else if (computer_points == 0) {
-    const failSound = new Audio("win.mp3");
-    failSound.play();
-    document.getElementById("computer").style.display = "none";
-    document.getElementById("computer-rock").style.display = "none";
-    document.getElementById("computer-paper").style.display = "none";
-    document.getElementById("computer-scissor").style.display = "none";
-    document.getElementById("player-rock").style.display = "none";
-    document.getElementById("player-paper").style.display = "none";
-    document.getElementById("player-scissor").style.display = "none";
-    document.getElementById("vs").style.display = "none";
-    document.getElementById("player-chances").style.display = "none";
-    document.getElementById("computer-chances").style.display = "none";
-    document.getElementById("winner-badge").style.display = "block";
-    document.getElementById("diksinth").style.display = "block";
-    if (true) {
-      setTimeout(() => {
-        location.reload();
-      }, 13000);
+    if (
+      localStorage.getItem("Name").includes("Shiny") ||
+      localStorage.getItem("Name").includes("shiny") ||
+      localStorage.getItem("Name").includes("Adaikala") ||
+      localStorage.getItem("Name").includes("adaikala")
+    ) {
+      const failSound = new Audio("minnale.mp3");
+      failSound.play();
+      document.getElementById("computer").style.display = "none";
+      document.getElementById("computer-rock").style.display = "none";
+      document.getElementById("computer-paper").style.display = "none";
+      document.getElementById("computer-scissor").style.display = "none";
+      document.getElementById("player-rock").style.display = "none";
+      document.getElementById("player-paper").style.display = "none";
+      document.getElementById("player-scissor").style.display = "none";
+      document.getElementById("vs").style.display = "none";
+      document.getElementById("player-chances").style.display = "none";
+      document.getElementById("computer-chances").style.display = "none";
+      document.getElementById("winner-badge").style.display = "none";
+      document.getElementById("diksinth").style.display = "none";
+      document.getElementById("player").style.display = "none";
+      document.getElementById("heart1").style.display = "block";
+      document.getElementById("heart2").style.display = "block";
+      document.getElementById("top_heart").style.display = "block";
+      document.getElementById("bottom_heart").style.display = "block";
+      document.getElementById("left_heart").style.display = "block";
+      document.getElementById("right_heart").style.display = "block";
+      document.getElementById("butterfly").style.display = "block";
+      document.getElementById("cat").style.display = "block";
+      if (true) {
+        setTimeout(() => {
+          location.reload();
+        }, 13000);
+      }
+    } else {
+      const failSound = new Audio("win.mp3");
+      failSound.play();
+      document.getElementById("computer").style.display = "none";
+      document.getElementById("computer-rock").style.display = "none";
+      document.getElementById("computer-paper").style.display = "none";
+      document.getElementById("computer-scissor").style.display = "none";
+      document.getElementById("player-rock").style.display = "none";
+      document.getElementById("player-paper").style.display = "none";
+      document.getElementById("player-scissor").style.display = "none";
+      document.getElementById("vs").style.display = "none";
+      document.getElementById("player-chances").style.display = "none";
+      document.getElementById("computer-chances").style.display = "none";
+      document.getElementById("winner-badge").style.display = "block";
+      document.getElementById("diksinth").style.display = "block";
+      if (true) {
+        setTimeout(() => {
+          location.reload();
+        }, 13000);
+      }
     }
   } else {
     var random_number = Math.ceil(Math.random() * 15);
@@ -373,7 +481,11 @@ function Scissor() {
       failSound.play();
       document.getElementById("message").textContent =
         "Rock Crushes the Scissor";
-      document.getElementById("message").style.color = "Red";
+      document.getElementById("message").style.color = "#FF2800";
+      document.getElementById("message").style.textShadow = `-1px -1px 0 white,
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white`;
       if (true) {
         const message = document.getElementById("message");
         message.style.display = "block";
@@ -394,7 +506,11 @@ function Scissor() {
       failSound.play();
       document.getElementById("message").textContent =
         "Scissor Slice the Paper";
-      document.getElementById("message").style.color = "green";
+      document.getElementById("message").style.color = "#98FB98";
+      document.getElementById("message").style.textShadow = `-1px -1px 0 white,
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white`;
       if (true) {
         const message = document.getElementById("message");
         message.style.display = "block";

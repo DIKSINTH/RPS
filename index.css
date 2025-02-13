@@ -242,6 +242,71 @@
   position: absolute;
   width: 250px;
   height: 300px;
+  right: 10%;
+  display: none;
+}
+
+#cat {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  left: 10%;
+  top: 30%;
+  display: none;
+}
+#butterfly {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  right: 25%;
+  top: 30%;
+  display: none;
+}
+#bottom_heart {
+  position: absolute;
+  width: 100vw;
+  height: 200px;
   right: 0%;
+  bottom: 0%;
+  display: none;
+}
+#top_heart {
+  position: absolute;
+  width: 100vw;
+  height: 400px;
+  right: 0%;
+  top: 0%;
+  display: none;
+}
+#right_heart {
+  position: absolute;
+  width: 200px;
+  height: 505px;
+  right: 0%;
+  top: 0%;
+  display: none;
+}
+#left_heart {
+  position: absolute;
+  width: 200px;
+  height: 505px;
+  left: 0%;
+  top: 0%;
+  display: none;
+}
+#heart2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 30%;
+  top: 1%;
+  display: none;
+}
+#lose {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 35%;
+  top: 1%;
   display: none;
 }

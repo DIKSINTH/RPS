@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#header-img-1 {
+  width: 150px;
+  height: 95px;
+  position: absolute;
+  left: 1%;
+}
+#header-img-2 {
+  width: 150px;
+  height: 95px;
+  position: absolute;
+  right: 1%;
+}
+#header {
+  height: 12vh;
+  position: relative;
+  width: 100vw;
+  background-color: #640d5f;
+  font-family: "Jaro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 4px;
+  color: white;
+  word-spacing: 8px;
+}
+#header h1 {
+  position: absolute;
+  left: 33%;
+}
+#hero {
+  width: 100vw;
+  height: 250vh;
+  background-color: #d91656;
+  position: relative;
+}
+#intro {
+  position: absolute;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80vw;
+  color: white;
+  text-align: justify;
+  left: 8%;
+  top: 2%;
+}
+#game {
+  position: absolute;
+  top: 22%;
+  left: 31%;
+  font-family: "Jaro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 74px;
+  letter-spacing: 5px;
+}
+#rule {
+  color: white;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  width: 80vw;
+  top: 29%;
+  left: 8%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#return:hover {
+  background-color: #640d5f;
+}
+#return {
+  width: 250px;
+  height: 70px;
+  font-size: 1.5em;
+  border-radius: 20px;
+  background-color: #ffb200;
+  color: white;
+  border: 0px;
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+#i {
+  position: absolute;
+  width: 700px;
+  bottom: 15%;
+  left: 25%;
+  height: 250px;
+}

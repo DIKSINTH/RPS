@@ -75,7 +75,7 @@ var user_points = 5;
 var computer_points = 5;
 function Rock() {
   if (user_points == 0) {
-    const failSound = new Audio("fail.mp3");
+    const failSound = new Audio("../assets/audios/fail.mp3");
     failSound.play();
     document.getElementById("player").style.display = "none";
     document.getElementById("computer-rock").style.display = "none";
@@ -100,7 +100,7 @@ function Rock() {
       localStorage.getItem("Name").includes("Adaikala") ||
       localStorage.getItem("Name").includes("adaikala")
     ) {
-      const failSound = new Audio("minnale.mp3");
+      const failSound = new Audio("../assets/audios/minnale.mp3");
       failSound.play();
       document.getElementById("computer").style.display = "none";
       document.getElementById("computer-rock").style.display = "none";
@@ -129,7 +129,7 @@ function Rock() {
         }, 13000);
       }
     } else {
-      const failSound = new Audio("win.mp3");
+      const failSound = new Audio("../assets/audios/win.mp3");
       failSound.play();
       document.getElementById("computer").style.display = "none";
       document.getElementById("computer-rock").style.display = "none";
@@ -177,7 +177,7 @@ function Rock() {
     ) {
       user_points -= 1;
       document.getElementById("player-chances").textContent = user_points;
-      const failSound = new Audio("wrong.mp3");
+      const failSound = new Audio("../assets/audios/wrong.mp3");
       failSound.play();
       document.getElementById("message").textContent = "Paper Wraps the Rock";
       document.getElementById("message").style.color = "#FF2800";
@@ -201,7 +201,7 @@ function Rock() {
     ) {
       computer_points -= 1;
       document.getElementById("computer-chances").textContent = computer_points;
-      const failSound = new Audio("right.mp3");
+      const failSound = new Audio("../assets/audios/right.mp3");
       failSound.play();
       document.getElementById("message").textContent =
         "Rock Crushes the Scissor";
@@ -233,7 +233,7 @@ function Rock() {
 
 function Paper() {
   if (user_points == 0) {
-    const failSound = new Audio("fail.mp3");
+    const failSound = new Audio("../assets/audios/fail.mp3");
     failSound.play();
     document.getElementById("player").style.display = "none";
     document.getElementById("computer-rock").style.display = "none";
@@ -258,7 +258,7 @@ function Paper() {
       localStorage.getItem("Name").includes("Adaikala") ||
       localStorage.getItem("Name").includes("adaikala")
     ) {
-      const failSound = new Audio("minnale.mp3");
+      const failSound = new Audio("../assets/audios/minnale.mp3");
       failSound.play();
       document.getElementById("computer").style.display = "none";
       document.getElementById("computer-rock").style.display = "none";
@@ -287,7 +287,7 @@ function Paper() {
         }, 13000);
       }
     } else {
-      const failSound = new Audio("win.mp3");
+      const failSound = new Audio("../assets/audios/win.mp3");
       failSound.play();
       document.getElementById("computer").style.display = "none";
       document.getElementById("computer-rock").style.display = "none";
@@ -320,7 +320,7 @@ function Paper() {
     ) {
       computer_points -= 1;
       document.getElementById("computer-chances").textContent = computer_points;
-      const failSound = new Audio("right.mp3");
+      const failSound = new Audio("../assets/audios/right.mp3");
       failSound.play();
       document.getElementById("message").textContent = "Paper Wraps the Rock";
       document.getElementById("message").style.color = "#98FB98";
@@ -359,7 +359,7 @@ function Paper() {
     ) {
       user_points -= 1;
       document.getElementById("player-chances").textContent = user_points;
-      const failSound = new Audio("wrong.mp3");
+      const failSound = new Audio("../assets/audios/wrong.mp3");
       failSound.play();
       document.getElementById("message").textContent =
         "Scissor Slice the Paper";
@@ -390,7 +390,7 @@ function Paper() {
 }
 function Scissor() {
   if (user_points == 0) {
-    const failSound = new Audio("fail.mp3");
+    const failSound = new Audio("../assets/audios/fail.mp3");
     failSound.play();
     document.getElementById("player").style.display = "none";
     document.getElementById("computer-rock").style.display = "none";
@@ -415,7 +415,7 @@ function Scissor() {
       localStorage.getItem("Name").includes("Adaikala") ||
       localStorage.getItem("Name").includes("adaikala")
     ) {
-      const failSound = new Audio("minnale.mp3");
+      const failSound = new Audio("../assets/audios/minnale.mp3");
       failSound.play();
       document.getElementById("computer").style.display = "none";
       document.getElementById("computer-rock").style.display = "none";
@@ -444,7 +444,7 @@ function Scissor() {
         }, 13000);
       }
     } else {
-      const failSound = new Audio("win.mp3");
+      const failSound = new Audio("../assets/audios/win.mp3");
       failSound.play();
       document.getElementById("computer").style.display = "none";
       document.getElementById("computer-rock").style.display = "none";
@@ -477,7 +477,7 @@ function Scissor() {
     ) {
       user_points -= 1;
       document.getElementById("player-chances").textContent = user_points;
-      const failSound = new Audio("wrong.mp3");
+      const failSound = new Audio("../assets/audios/wrong.mp3");
       failSound.play();
       document.getElementById("message").textContent =
         "Rock Crushes the Scissor";
@@ -502,7 +502,7 @@ function Scissor() {
     ) {
       computer_points -= 1;
       document.getElementById("computer-chances").textContent = computer_points;
-      const failSound = new Audio("right.mp3");
+      const failSound = new Audio("../assets/audios/right.mp3");
       failSound.play();
       document.getElementById("message").textContent =
         "Scissor Slice the Paper";

@@ -146,4 +146,89 @@ a {
   #header {
     background-color: chartreuse;
   }
+  #header-img-1 {
+    top: 15%;
+    width: 40px;
+    height: 25px;
+    left: 0%;
+  }
+  #header-img-2 {
+    top: 15%;
+    width: 40px;
+    height: 25px;
+    left: 40%;
+  }
+  #header {
+    height: 4vh;
+    width: 100vw;
+    font-size: 6px;
+    letter-spacing: 0.9px;
+    word-spacing: 0px;
+  }
+  #header h1 {
+    left: 12%;
+    top: 22%;
+  }
+  #hero {
+    width: 100vw;
+    height: 250vh;
+    background-color: #d91656;
+  }
+  #intro {
+    position: absolute;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80vw;
+    color: white;
+    text-align: justify;
+    left: 8%;
+    top: 2%;
+  }
+  #game {
+    position: absolute;
+    top: 22%;
+    left: 31%;
+    font-family: "Jaro", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 5px;
+  }
+  #rule {
+    color: white;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 80vw;
+    top: 29%;
+    left: 8%;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  #return:hover {
+    background-color: #640d5f;
+  }
+  #return {
+    width: 250px;
+    height: 70px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #ffb200;
+    color: white;
+    border: 0px;
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+  }
+  #i {
+    position: absolute;
+    width: 700px;
+    bottom: 15%;
+    left: 25%;
+    height: 250px;
+  }
 }

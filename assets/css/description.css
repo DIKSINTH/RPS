@@ -96,3 +96,54 @@ a {
   left: 25%;
   height: 250px;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #header {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
+  #header h1 {
+    left: 27%;
+    top: 8%;
+  }
+  #hero {
+    width: 100vw;
+    height: 140vh;
+    background-color: #d91656;
+  }
+  #intro {
+    font-size: 24px;
+    left: 8%;
+    top: 2%;
+  }
+  #game {
+    top: 19%;
+    font-size: 37px;
+    letter-spacing: 2.5px;
+  }
+  #rule {
+    font-size: 24px;
+    top: 24%;
+    left: 8%;
+  }
+  #return {
+    width: 125px;
+    height: 35px;
+    font-size: 0.8em;
+    border-radius: 10px;
+    top: 80%;
+    left: 40%;
+  }
+  #i {
+    position: absolute;
+    width: 400px;
+    top: 66%;
+    left: 25%;
+    height: 125px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  #header {
+    background-color: chartreuse;
+  }
+}

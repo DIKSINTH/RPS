@@ -261,7 +261,7 @@
 #right_heart {
   position: absolute;
   width: 200px;
-  height: 505px;
+  height: 500px;
   right: 0%;
   top: 0%;
   display: none;
@@ -269,7 +269,7 @@
 #left_heart {
   position: absolute;
   width: 200px;
-  height: 505px;
+  height: 500px;
   left: 0%;
   top: 0%;
   display: none;
@@ -284,16 +284,13 @@
 }
 #lose {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   left: 35%;
-  top: 1%;
+  top: 0%;
   display: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  #header {
-    background-color: chartreuse;
-  }
   #Name {
     height: 40px;
     border-radius: 15px;
@@ -391,66 +388,220 @@
     left: 40%;
     display: none;
   }
+  #left-heart {
+    height: 300px;
+  }
+  #right-heart {
+    height: 300px;
+  }
+  #cat {
+    width: 150px;
+    height: 225px;
+    left: 10%;
+    top: 30%;
+  }
+  #butterfly {
+    width: 150px;
+    height: 225px;
+    right: 28%;
+    top: 40%;
+  }
+  #heart2 {
+    width: 250px;
+    height: 250px;
+    left: 26%;
+    top: 30%;
+  }
+  #lose {
+    width: 250x;
+    height: 290px;
+    left: 18%;
+    top: 10%;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  #Name {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  #alert_box {
+    width: 35vh;
+    height: 35vh;
+    top: 20%;
+    left: 15%;
+  }
+  #important_notice {
+    padding-top: 20px;
+    font-size: 24px;
+  }
+  #alert_message {
+    padding-top: 10px;
+    font-size: 14px;
+    margin-left: 22px;
+  }
+  #ok {
+    margin-top: 10px;
+  }
+  #header-img-1 {
+    width: 80px;
+    height: 55px;
+    left: 0%;
+    top: 5%;
+  }
+  #header-img-2 {
+    width: 90px;
+    height: 55px;
+    right: 1%;
+    top: 5%;
+  }
+  #header {
+    height: 10vh;
+    font-size: 12px;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+  }
+  #header h1 {
+    left: 25%;
+    top: 20%;
+  }
+  #choose {
+    height: 14vh;
+  }
+  #button-section {
+    left: 3%;
+  }
+  .img-btn {
+    width: 75px;
+    height: 80px;
+  }
+  .btn-img {
+    width: 75px;
+    height: 80px;
+    margin-left: 30px;
+  }
+  #play-ground {
+    height: 76vh;
+  }
+  #vs {
+    width: 60px;
+    height: 80px;
+    left: 41%;
+    top: 20%;
+  }
+  #message {
+    font-size: 12px;
+    left: 35%;
+    top: 10%;
+  }
+  #message1 {
+    font-size: 12px;
+    left: 42%;
+    top: 10%;
+  }
+  #player {
+    left: 10%;
+    top: 5%;
+    font-size: 16px;
+  }
+  #player-chances {
+    left: 16%;
+    top: 9%;
+    font-size: 18px;
+  }
+  #computer {
+    right: 7%;
+    top: 5%;
+    font-size: 16px;
+  }
+  #computer-chances {
+    right: 18%;
+    top: 9%;
+    font-size: 18px;
+  }
+  .player-pic {
+    width: 100px;
+    height: 70px;
+    left: 10%;
+    top: 20%;
+  }
+  .computer-pic {
+    width: 100px;
+    height: 70px;
+    right: 12%;
+    top: 20%;
+  }
+  #winner-badge {
+    width: 180px;
+    height: 100px;
+    top: 3%;
+    left: 13%;
+  }
+  #diksinth {
+    width: 200px;
+    height: 300px;
+    top: 10%;
+    left: 10%;
+  }
   #heart1 {
+    position: absolute;
     width: 250px;
     height: 300px;
     right: 10%;
     display: none;
   }
   #cat {
-    width: 200px;
-    height: 300px;
+    width: 70px;
+    height: 100px;
     left: 10%;
-    top: 30%;
-    display: none;
+    top: 60%;
   }
   #butterfly {
-    width: 200px;
-    height: 300px;
-    right: 25%;
-    top: 30%;
-    display: none;
+    width: 100px;
+    height: 130px;
+    right: 35%;
+    top: 50%;
   }
   #bottom_heart {
+    position: absolute;
     width: 100vw;
-    height: 200px;
+    height: 100px;
     right: 0%;
     bottom: 0%;
     display: none;
   }
   #top_heart {
+    position: absolute;
     width: 100vw;
-    height: 400px;
+    height: 100px;
     right: 0%;
     top: 0%;
     display: none;
   }
   #right_heart {
-    width: 200px;
-    height: 505px;
+    width: 80px;
+    height: 500px;
     right: 0%;
     top: 0%;
-    display: none;
   }
   #left_heart {
-    width: 200px;
-    height: 505px;
+    width: 80px;
+    height: 500px;
     left: 0%;
     top: 0%;
-    display: none;
   }
   #heart2 {
-    width: 500px;
-    height: 500px;
-    left: 30%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 10%;
     top: 1%;
     display: none;
   }
   #lose {
-    width: 250x;
-    height: 250px;
-    left: 25%;
-    top: 1%;
-    display: none;
+    width: 250px;
+    height: 200px;
+    left: 10%;
+    top: 0%;
   }
 }

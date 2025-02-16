@@ -389,14 +389,14 @@
     display: none;
   }
   #left-heart {
-    height: 300px;
+    height: 295px;
   }
   #right-heart {
-    height: 300px;
+    height: 295px;
   }
   #cat {
-    width: 150px;
-    height: 225px;
+    width: 250px;
+    height: 300px;
     left: 10%;
     top: 30%;
   }
